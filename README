@@ -1,0 +1,6 @@
+A simple page scrapper to retrieve links and image src
+and index the content in the form of invert index so 
+as to make searching easy
+
+How to run:
+python source.py
