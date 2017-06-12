@@ -10,14 +10,15 @@ def search(search_query):
                 for paragraph in sorted(invert_index[word]):
                     print ("-" * 80)
                     print ("\t" + str(paragraph))
-                    print ("Postions in the paragraph")
+                    print ("\nPostions in the paragraph")
                     for word_pos in sorted(invert_index[word][paragraph]):
                         print ("\t\t" + str(word_pos))
                     # print_paragraph(paragraph_no)
                     print ("-" * 80)
 
 if __name__ == "__main__":
-    website = "http://python-guide-pt-br.readthedocs.io/en/latest/dev/virtualenvs/"
+    website = "http://python-guide-pt-br.re" \
+              "adthedocs.io/en/latest/dev/virtualenvs/"
     openwebsite = urllib2.urlopen(website)
     html = openwebsite.read()
 
